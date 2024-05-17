@@ -21,13 +21,11 @@ th,
 tr,
 td {
   text-align: left;
-  /* border: 1px solid white; */
+  border: 1px solid white;
   border-collapse: collapse;
   padding: 10px;
 }
 /* 
-
-
 input,
 input:focus,
 input:hover {
