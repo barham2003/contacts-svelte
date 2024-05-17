@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-size: 20px;
+}
+body,
+input {
+  font-family: "Courier New", Courier, monospace;
+  background-color: black;
+  color: white;
+}
+
+input {
+  @apply focus:outline-none hover:outline-none;
+}
+
+table,
+th,
+tr,
+td {
+  text-align: left;
+  /* border: 1px solid white; */
+  border-collapse: collapse;
+  padding: 10px;
+}
+/* 
+
+
+input,
+input:focus,
+input:hover {
+  outline: 0;
+  border: 0;
+} */
