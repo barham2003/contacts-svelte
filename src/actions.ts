@@ -39,3 +39,23 @@ export async function deleteContact(id: string) {
     console.log(json)
     return json.message
 }
+
+interface UpdateContact {
+    firstName?: string
+    lastName?: string
+    phone?: string
+}
+
+export async function updateContact(id: string, updateContact: UpdateContact) {
+    const res = await fetch(`${API}/contacts/${id}`, {
+        method: "PUT",
+        headers: {
+            "Content-type": "application/json"
+        },
+        body: JSON.stringify(updateContact),
+    })
+
+    const json = await res.json()
+
+    return json.message
+}
